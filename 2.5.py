@@ -1,5 +1,10 @@
-talent = float(input("one talent is "))
-pound = float(input("one pound is "))
-lot = float(input("one lot is "))
-weight = (talent*pound*lot)+(pound*lot)+lot
-print("The weight in modern units: "+ str(weight/1000) +" kilograms " + "and " + str(weight) + " grams ")
+talents = float(input("enter talents: "))
+pounds = float(input("enter pounds: "))
+lots = float(input("enter lots: "))
+total_grams= talents*20*32*13.3+pounds*32*13.3+lots*13.3
+kilograms = total_grams//1000
+grams = total_grams%1000
+print(f"the weight in the modern units: {round(kilograms)} kilograms and {grams:5.2f} grams")
+
+
+
